@@ -10,6 +10,7 @@ function App() {
 
   const [data, setData] = useState([]);
 
+  //Axios is used to perform a GET request from baseUrl that allows to make requests to a given endpoint.
   useEffect(() => {
     axios.get(baseURL).then((response) => {
       setData(response.data);
@@ -17,6 +18,9 @@ function App() {
   }, []);
   //console.log(data);
   return (
+    //Binding the application to perform component based routing using react-router-dom module
+    //Enables to navigate with various components and facilitates component-based routing according to the needs of the app
+    //V6 has some changes where the old fashion of using Switch, exact, useHistory etc are removed.
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Users users={data} />} />
