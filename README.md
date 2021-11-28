@@ -16,3 +16,4 @@ The purpose of this assignment is to evaluate the basic knowledge of react conce
 - npm install react-router-dom
 
 ## Live Link
+Open [Live Link](https://elastic-heyrovsky-05404e.netlify.app/) to view it in the browser.
