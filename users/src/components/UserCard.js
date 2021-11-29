@@ -15,7 +15,9 @@ const UserCard = ({ id, name, email, website }) => {
         <div className="card__content">
           <h2>{name}</h2>
           <p>{domainName}</p>
-          <a href={userURL}>{userURL}</a>
+          <a href={userURL} rel="noopener noreferrer" target="_blank">
+            {userURL}
+          </a>
         </div>
         <div className="card__btn">
           <Button id={id} />
